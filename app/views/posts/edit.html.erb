@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <%= form_for(@post) do |f| %>
+
  <% if @post.errors.any? %>
   <div id="error_explanation">
     <h2><%= @post.errors.count %>件のエラーがあります。</h2>
@@ -12,7 +13,6 @@
     </ul>
   </div>
  <% end %>
-
 
   <%= f.label :title %>
   <%= f.text_field :title %>
