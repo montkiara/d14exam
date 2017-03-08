@@ -2,13 +2,25 @@
 <html>
 <head>
   <title>D14exam</title>
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+  <header>
+  <ul>
+    <li><a href="#">DIVEGRAM</a></li>
+  </ul>
+</header>
+
 <%= yield %>
+
+<footer>
+  <p>運営会社DIVE INTO CODE株式会社</p>
+  <p>© 2015-2017 Copyright DIVE INTO CODE Corp.</p>
+</footer>
 
 </body>
 </html>
