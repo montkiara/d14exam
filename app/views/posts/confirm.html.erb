@@ -1,4 +1,4 @@
-<h3>以下の内容で送信する。</h3>
+<h3>以下の内容で登録する。</h3>
 
 <%= form_for(@post) do |f| %>
   <%= f.hidden_field :title %>
@@ -6,6 +6,11 @@
 
   <p><%= @post.title %></p>
   <P><%= @post.content %></p>
-
   <%= f.submit "登録する"%>
+<% end %>
+
+<%= form_for(@post, url: new_post_path, method: 'get') do |f| %>
+  <%= f.hidden_field :title %>
+  <%= f.hidden_field :content %>
+<%= f.submit "戻る", name: 'back' %>
 <% end %>

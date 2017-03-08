@@ -6,7 +6,15 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
+    if params[:back]
+      @post = Post.new(posts_params)
+    else
+      @post = Post.new
+    end
+  end
+
+  def confirm
+    @post = Post.new(posts_params)
   end
 
   def create
@@ -20,10 +28,6 @@ class PostsController < ApplicationController
 
   def edit
     #@post = Post.find(params[:id])
-  end
-
-  def confirm
-    @post = Post.new(posts_params)
   end
 
   def update
