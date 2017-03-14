@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DIVEGRAM</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section>
+    <img src="<%= asset_path "divegram.png" %>">
+  </section>
+  <section>
+    <h1>About DIVEGRAM</h1>
+    <p>
+    DIVEGRAMは、DIVE14の大課題２です。<br>
+    この大課題２が合格になるとDIVE15に進むことができます。
+    </p>
+    <p>
+    残り期間が4か月になりましたので心配になってきました。<br>
+    頑張ります。
+    </p>
+  </section>
+
+  <section class="function container-fluid">
+    <div class="row">
+    <h2>Function</h2>
+      <div class="function-images">
+        <div class="col-md-3 col-sm-6">
+          <div class="function-image">
+            <img src="<%= asset_path "key.png" %>">
+            <p>ログイン機能</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="function-image">
+            <img src="<%= asset_path "mails.png" %>">
+            <p>メール送信機能</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="function-image">
+            <img src="<%= asset_path "girls.png" %>">
+            <p>友達つながり機能</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="function-image">
+            <img src="<%= asset_path "comment.png" %>">
+            <p>写真投稿機能</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -7,11 +7,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
   <header>
   <ul>
-    <li><a href="#">DIVEGRAM</a></li>
+    <li><%= link_to "DIVEGRAM", root_path %></li>
+    <li><%= link_to "写真投稿", posts_path %></li>
   </ul>
 </header>
 
