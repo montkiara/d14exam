@@ -24,7 +24,7 @@ class PostsController < ApplicationController
     @post.user_id = current_user.id
     if @post.save
       redirect_to posts_path, notice: "投稿しました！"
-      NoticeMailer.sendmail_post(@post).deliver_now
+      NoticeMailer.sendmail_post(@post).deliver
     else
       render 'new'
     end
