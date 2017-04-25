@@ -5,6 +5,7 @@
       <%= link_to "写真を投稿する", new_post_path, class: 'btn btn-default' %>
     <% @posts.each do |post| %>
     <div class="row">
+      <%= profile_img(post.user) %>
       <p>ユーザー名:<%= post.user.name %></p>
       <h4><strong><%= post.title %></strong></h4>
       <p><%= post.content %></p>
